@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+  <div class="first-container-body " >
+    <article class="container-text-box">
+     <header class="container-title">
+      <strong>Stay updated!</strong> 
+     </header> 
+      <p class="text-description"> 
+        <strong>Join 60,000+ product managers receiving monthly updates on:</strong>
+      </p>
+        <ul>
+          <li class="container-list-text"  > <span><img src="./assets/images/icon-list.svg" alt=""></span> <strong> Product discovery and building what matters </strong></li>
+          <li class="container-list-text"  > <span><img src="./assets/images/icon-list.svg" alt=""></span><strong>Measuring to ensure updates are a success </strong></li>
+          <li class="container-list-text"  > <span><img src="./assets/images/icon-list.svg" alt=""></span><strong>And much more! </strong></li>
+        </ul>
+    </article>
+    
+    <section class="container-validation-email">
+      <form  id="formulario" action="">
+        <fieldset class="email-address">
+          <legend class="text-email-address"> <strong>Email address</strong> <span class="error-message hidden" aria-live="polite">valid email required</span></legend><br>
+            <label>
+              <input
+                type="email" class="state-box-input state-error"
+                id="email"
+                value=""
+                name="email"
+                placeholder=" email@company.com"
+                autocomplete="on"
+                maxlength="50"
+                required>
+            </label> 
+        </fieldset>
+      <div class="container-button">
+        <button id="button-subscribe" type="submit">
+          Subscribe to monthly newsletter
+        </button>
+      </div>
+      </form>
+    </section>
+      <div id="container-image">
+        <img class="image-website" src="./assets/images/illustration-sign-up-desktop.svg" alt="imagen principal" >
+        <img  class="image-mobile hidden" src="./assets/images/illustration-sign-up-mobile.svg" alt="imagen mobile">
+      </div>
+  </div>
+  
+<!--mensaje subscribe ok-->
+<section class="success-state hidden">
+  <div class="box-success-state">
+    <img src="./assets/images/icon-list.svg" alt="check"  width="50px">
+        <h1 class="thanks"> 
+          <strong>Thanks for subscribing!</strong>
+        </h1>
+          <p class="container-paragraph"> A confirmation email has been sent to <br>
+              <strong>ash@loremcompany.com.</strong>Please open it and click <br>
+              the button inside to confirm your subscription.
+          </p>
+      <button id="dismiss-message">
+          Dismiss message
+      </button>
+  </div>
+</section>
+
+<script src="./js.js"></script>
+
+</body>
